@@ -1,4 +1,4 @@
- p::first-letter{
+ /* p::first-letter{
   font-size: 2em;
   color: red;
 }
@@ -18,5 +18,37 @@ p{
 
 button{
   cursor: pointer;
-} 
+}  */
 
+
+p::before,p::after{
+  color: red;
+  background-color: darkcyan;
+}
+p::before{
+  content: '>>>>>>';
+}
+p::after{
+  content: '<<<<<<';
+}
+
+ul{
+  margin: 30px auto 20px;
+  width: 80%;
+  text-align: center;
+}
+li{
+  background-color: rgb(186, 203, 233);
+}
+
+li + li{
+  margin-top: 20px;
+}
+
+
+li::before{
+  content: open-quote;
+}
+li::after{
+  content:close-quote;
+}
