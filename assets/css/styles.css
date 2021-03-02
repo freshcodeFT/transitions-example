@@ -35,29 +35,15 @@ p::after{
 ul{
   margin: 30px auto 20px;
   width: 80%;
-  text-align: center;
-}
-li{
-  background-color: rgb(186, 203, 233);
-  position: relative;
 }
 
 li + li{
   margin-top: 20px;
 }
 
-li::before,li::after{
-  position: absolute;
-  font-size: 2em;
-}
-
 li::before{
- content: open-quote;
-  right: calc(100% + 5px);
-  top: -0.4em;
-}
-li::after{
-  content:close-quote;
-  left: calc(100% + 5px);
-  bottom: -0.9em;
+  display: inline-block;
+  content: url("../images/anchor.svg");
+  transform: scale(0.8);
+  vertical-align: middle;
 }
